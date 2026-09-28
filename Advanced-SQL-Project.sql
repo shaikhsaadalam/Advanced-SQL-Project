@@ -67,7 +67,7 @@ SELECT
     COUNT(show_id) as total_content
 FROM netflix
 GROUP BY 1
--- 10. Find top 5 year with highest avg content release in a specific country!
+-- 10. Find top 5 yearly content count in a specific country!
 SELECT 
     EXTRACT(YEAR FROM date_added) AS year,
     COUNT(*) AS content_count
